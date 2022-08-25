@@ -60,7 +60,7 @@ admin.site.register(Third_party,Third_partyAdmin)
 
 class CardAdmin(admin.ModelAdmin):
     list_display=("card_number","card_name","card_type","expiry_date","security_code",
-    "date_ofissue","account")
+    "date_ofissue","account_number")
     search_fields=("card_number","card_name","card_type","expiry_date","security_code",
     "date_ofissue","account")
 admin.site.register(Card,CardAdmin)

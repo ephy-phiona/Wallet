@@ -53,7 +53,7 @@ class Card(models.Model):
     expiry_date=models.DateTimeField(default= datetime.datetime.now)
     security_code=models.IntegerField(default= False)
     date_ofissue=models.DateTimeField(default= datetime.datetime.now)
-    account=models.IntegerField(default= False)
+    account_number=models.IntegerField(default= False)
 
 class Third_party(models.Model):
     name=models.CharField(max_length=30)
